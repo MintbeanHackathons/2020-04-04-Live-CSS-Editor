@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Editor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class=main>
+    <div>
+      <div class="search">
+        Please enter a site you would like to edit :) <br>
+        Or you can make changes to my portfolio! <br>
+        (Note: this doesn"t work for all websites)<br>
+        <input form="search" type="text" id="searchValue">
+        <input onClick="search()" form="search" type="submit" value="Submit">
+      </div>
+      <div class="editor">
+        What would you like to change? <br>
+        Style Name: Value <br>
+        <form>
+          <input type="text" form="editor" id="style" name="editor">
+          <input type="text" form="editor" id="value" name="editor">
+          <input onClick="changeStyle()" form="changeStyle" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="page">
+        <iframe src="https://rachnovo.github.io/" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" id="frame" class="frame">
+        </iframe>
+    </div>
+  </div>
+  <script>
+    const search = function() {
+      document.getElementsByClassName("frame")[0].src = document.getElementById("searchValue").value;
+    }
+    const changeStyle = function() {
+      const style = document.getElementById("style").value;
+      const value = document.getElementById("value").value;
+      document.body.style[style] = value;
+    }
+  </script>
+</body>
+</html>

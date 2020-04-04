@@ -1,0 +1,22 @@
+{
+  "name": "2020-04-04-live-css-editor",
+  "version": "1.0.0",
+  "description": "## Prize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachNovo/2020-04-04-Live-CSS-Editor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachNovo/2020-04-04-Live-CSS-Editor/issues"
+  },
+  "homepage": "https://github.com/RachNovo/2020-04-04-Live-CSS-Editor#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
