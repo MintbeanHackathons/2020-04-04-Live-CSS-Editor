@@ -1,7 +1,7 @@
 
 function setupEditor() {
     window.editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
+    editor.setTheme("ace/theme/tomorrow_night_blue");
     editor.getSession().setMode("ace/mode/html");
     editor.setValue(`<!DOCTYPE html>
     <html>
