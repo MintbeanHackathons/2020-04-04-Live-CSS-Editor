@@ -11,7 +11,7 @@
     "default_title": "mintbean-css-editor",
     "default_popup": "popup/popup.html"
   },
-  "permissions": ["*://*/*", "tabs", "notifications", "http://*/", "https://*/"],
+  "permissions": ["tabs", "notifications", "http://*/", "https://*/"],
   "background": {
     "scripts": ["background.js"]
   }
