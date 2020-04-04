@@ -1,0 +1,22 @@
+#htmleditor {
+  float: left;
+  background: white;
+  width: 50%;
+  height: 280px;
+  color: blueviolet;
+}
+#csseditor {
+  float: left;
+  background: white;
+  width: 50%;
+  height: 280px;
+  color: blueviolet;
+}
+
+#return {
+  clear: left;
+  background: whitesmoke;
+  width: 100%;
+  height: 280px;
+  color: black;
+}
