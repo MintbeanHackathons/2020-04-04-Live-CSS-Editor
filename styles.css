@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+#body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(254, 251, 247);
+}
+.header {
+  height: 10%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin: 0;
+  text-align: center;
+}
+.main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#styles-area {
+  padding: 2%;
+  width: 50%;
+  height: 75%;
+}
+
+#editor-area {
+  padding: 2%;
+  height: 75%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid rgb(187, 136, 105);
+}
+
+#light {
+  font-size: 18px !important;
+  height: 90% !important;
+  width: 90% !important;
+  border: 2px solid rgb(187, 136, 105) !important;
+  background-color: white !important;
+  color: black;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.24) !important;
+}
+#dark {
+  font-size: 18px !important;
+  height: 90% !important;
+  width: 90% !important;
+  border: 2px solid black !important;
+  background-color: grey !important;
+  color: white;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.24) !important;
+}
+#under-the-sea {
+  font-size: 18px !important;
+  height: 90% !important;
+  width: 90% !important;
+  border: 2px solid coral !important;
+  background-color: blue !important;
+  color: coral;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.24) !important;
+}
+#vampire {
+  font-size: 18px !important;
+  height: 90% !important;
+  width: 90% !important;
+  border: 2px solid red !important;
+  color: red;
+  background-color: black !important;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.24) !important;
+}
