@@ -1,0 +1,115 @@
+/* GLOBAL CSS */
+
+* {
+    padding: 0; 
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #322;
+}
+
+.clearfix {
+    clear:both ;
+}
+
+/* HEADER AREA */
+
+#logo img {
+    width: 100px;
+    margin: 1rem;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.644);
+    height: 2rem;
+    padding: 1rem;
+    border: solid 1px #e3e3e3;
+    box-shadow:0 3px 10px -5px rgba(0,0,0,.5);
+    color: whitesmoke;
+    display: flex;
+}
+
+#nav-editor, #nav-preview {
+    width: 50%;
+    display: flex;
+}
+
+nav h2 {    
+    text-shadow:0 1px 1px white;
+    line-height: 2rem;   
+    letter-spacing: 3px;
+}
+
+.nav-icon {
+    font-size: 2rem;
+    font-weight: bold;    
+    margin-right: 1.2rem;    
+}
+
+button {
+    padding: 1rem;
+    border: solid 1px #e3e3e3;
+    background: whitesmoke;
+    box-shadow: 0 1px 1px rosybrown;
+    cursor: pointer;
+}
+
+/* IDE TEXT EDITOR / CSS */
+
+#ide {       
+    position: absolute;
+    top:220px;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    display: flex;
+}
+
+#edit {
+    background-color: purple;
+}
+#preview {
+    background-color: olivedrab;
+}
+
+#edit, #preview{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.container{
+    position: absolute;
+    height:100%;   
+    top:-10px;
+    left:0;
+    right:0;
+    bottom:-10px;
+}
+#edit .container{
+    border-right:1px solid #e3e3e3;
+    bottom:0;
+}
+.container iframe{
+    position: absolute;
+}
+.container textarea, .container iframe, .CodeMirror{
+    height:100%;
+    width:100%;
+    resize:none;
+    border:none;
+    outline:none;
+}
+
+/* Code Mirror */
+.CodeMirror-scroll { 
+    height:100%  !important
+}
+.CodeMirror-gutter,
+.CodeMirror-lines{
+    line-height:20px;
+}
