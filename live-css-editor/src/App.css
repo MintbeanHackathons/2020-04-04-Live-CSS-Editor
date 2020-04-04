@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: aquamarine;
+}
+
+.App {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.App form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.App form textarea {
+  margin: 10px;
+  border-radius: 10px;
+  
+}
