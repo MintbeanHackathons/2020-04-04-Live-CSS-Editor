@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .container.mb-5
     .row.mb-5
       .col-12
         h3 Custom CSS
