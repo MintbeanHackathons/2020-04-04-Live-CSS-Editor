@@ -45,7 +45,7 @@ Steps to get started:
 
 When done:
 
-1. create a pull request against the original repo's `master`. This is your end product. [Here are some examples](https://github.com/MintbeanHackathons/ResumeBuilder/pulls).
+1. create a pull request against the original repo's `master`. This is yo(https://github.com/MintbeanHackathons/ResumeBuilder/pulls)ur end product. [Here are some examples].
 1. Make sure you have finished the requirements in the `How to get points for Aesthetic Appeal` section.
 
 ## Scoring
