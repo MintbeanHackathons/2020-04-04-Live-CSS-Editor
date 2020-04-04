@@ -1,3 +1,25 @@
+# Installation Instructions
+
+This is built on top of `create-react-app`. Clone this repo into a folder, then from inside the folder:
+
+```
+$ npm install
+$ npm start
+```
+
+This should open up a `http://localhost:3000/` in your browser. Here's the demo online:
+
+https://2020-04-04-live-css-editor.now.sh/
+
+That's it!
+
+## TODO
+
+- Would be nice to get the Ace themese working; I suspect there's some sort of issue with webpack not being able to load it properly;
+- Get rid of the service worker error in the console (I was deleting all unnecessary files and this started showing as a result);
+- Bonus: write some Cypress end-to-end tests;
+- Build a little Chrome extension as per the hackathon "nice-to-have" instructions.
+
 # Today's Objective: Live CSS Editor
 
 ## Prize
@@ -83,7 +105,7 @@ There are no other restrictions.
 1. You get a LOT of time for code review comments. So you can win even if you feel your project isn't great, simply on the strength of your code review comments!
 1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
 
-# create-react-app readme contents
+# create-react-app Readme.md Contents
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
