@@ -7,8 +7,8 @@ var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
 	autoCloseBrackets: true
 });
 
-var editor = document.querySelector('#editor');
+document.getElementById("editor").addEventListener("change", updateCss);
 
-editor.addEventListener('change', e => {
-  document.getElementById('myCss').innerHTML = cssCode;
-});
+function updateCss(){
+	document.getElementById("myCss").innerHTML = editor.getValue(); 
+}
