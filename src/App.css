@@ -1,0 +1,18 @@
+
+body{
+    margin: 60px
+}
+.edit {
+width: 200%;
+height: 500px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page{
+    margin:100px 700px;
+    padding: 100px;
+}
