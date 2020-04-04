@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <>
-          <style id="style" dangerouslySetInnerHTML={{ __html: css }}></style>
+    <style id="style" dangerouslySetInnerHTML={{ __html: css }} />
       <div className="forms">
         <div>
           <h3>HTML</h3>

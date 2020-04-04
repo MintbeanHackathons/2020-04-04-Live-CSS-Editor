@@ -5,6 +5,8 @@ body{
 .edit {
 width: 200%;
 height: 500px;
+font-size: 1.6em;
+font-weight: 500;
 }
 
 .forms{
