@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import SampleMarkup from "./SampleMarkup";
 
 import AceEditor from "react-ace";
 
-import "ace-builds/webpack-resolver";
-import "ace-builds/src-noconflict/mode-css";
-import "ace-builds/src-noconflict/theme-github";
+// import "ace-builds/src-noconflict/theme-github";
+// import "ace-builds/src-noconflict/mode-css";
+
+// import "ace-builds/webpack-resolver";
+require("ace-builds/src-noconflict/mode-css");
+require("ace-builds/src-noconflict/theme-github");
 
 const code = `.sample-markup {
   font-size: 1em;
