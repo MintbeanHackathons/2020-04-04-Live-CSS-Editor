@@ -3,16 +3,18 @@ const DOMSelect = document.querySelector.bind(document);
 const DOMSelectAll = document.querySelectorAll.bind(document);
 
 const DEFAULT_CSS =
-`h1 {
+`h2 {
   color: red;
-  font-weight: bold;
-}
-
-h2 {
-  color: blue;
+  font-family: fantasy;
+  font-weight: normal;
 }
 
 h3 {
+  color: blue;
+  font-family: monospace;
+}
+
+h4 {
   color: green;
 }
 
@@ -24,6 +26,7 @@ p {
 button {
   background-color: lightblue;
   border: solid thin black;
+  border-radius: 10px;
   font-size:2em;
 }
 
