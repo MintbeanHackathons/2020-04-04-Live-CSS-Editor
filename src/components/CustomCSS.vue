@@ -1,5 +1,8 @@
 <template lang="pug">
   .container
+    .row.mb-5
+      .col-12
+        h3 Custom CSS
     .row
       .col-6(v-for="(tag,index) in tags")
         .card
@@ -35,7 +38,7 @@
                       type="number"
                       required
                       min="1"
-                      placeholder="0")
+                      placeholder="1")
 </template>
 <script>
 import Swatches from "vue-swatches";
