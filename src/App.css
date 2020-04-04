@@ -6,13 +6,15 @@ section {
 
 .app {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
 }
 
 .editor,
 .sample-markup {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     flex: 1;
-    padding: 1rem;
+}
+.sample-markup {
+    margin: 1rem;
 }
