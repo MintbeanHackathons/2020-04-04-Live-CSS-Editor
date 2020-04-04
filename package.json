@@ -1,0 +1,34 @@
+{
+  "name": "KytraMintBean0404",
+  "version": "1.14.0",
+  "description": "MintBean0404",
+  "author": "Kytra",
+  "license": "",
+  "main": "../MintBean04-04/server/server.js",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "react-dev": "./node_modules/.bin/webpack -d --watch --display-error-details"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "webpack": "^4.42.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-cli": "^6.6.5",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.5",
+    "webpack-cli": "^3.3.11"
+  }
+}
