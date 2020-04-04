@@ -6,6 +6,9 @@ import Editor from "./editor";
 function App() {
   return (
     <div className="App">
+      <header>
+        <h1>My CSS Editor</h1>
+      </header>
       <Editor />
     </div>
   );
