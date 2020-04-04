@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="description" content="CSS Editor">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      textarea {
+        text-align: left;
+        font-family: monospace;
+        color: black;
+        background-color: #FCFC9A;
+      }
+    </style>
+    <!-- 
+      Some generic styling left in the textarea so it still remains readable with inevitable style changes
+    -->
     <title>CSS Editor</title>
   </head>
   <body>
@@ -17,6 +28,14 @@
           to write CSS that targets paragraphs all the same. This page is very self-descriptive.
           Try writing some CSS involving the tags, classes, and IDs below!
       </p>
+      <form>
+        <label for="editor">Write CSS below:</label>
+        <br />
+        <textarea id="editor" name="editor">
+
+        </textarea>
+        
+      </form>
       <h2 class="awesome-class">This H2 has a class named "awesome-class"</h2>
       <p class="awesome-class">
         This paragraph also has the "awesome-class" class attached to it!
@@ -43,9 +62,14 @@
         <li>Potato</li>
       </ul>
       <p id="ingredients">
-        This paragraph has an id called "ingredients", and the vegetables I like on my
+        This paragraph has an ID called "ingredients", and the vegetables I like on my
           sandwiches have the class "hoagie".
       </p>
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
