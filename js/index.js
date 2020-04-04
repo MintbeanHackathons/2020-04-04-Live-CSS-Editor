@@ -2,29 +2,34 @@ const DOMCreate = document.createElement.bind(document);
 const DOMSelect = document.querySelector.bind(document);
 const DOMSelectAll = document.querySelectorAll.bind(document);
 
-const DEFAULT_CSS = `
-  h1 {
-    color: red;
-    font-weight: bold;
-  }
+const DEFAULT_CSS =
+`h1 {
+  color: red;
+  font-weight: bold;
+}
 
-  h2 {
-    color: blue;
-  }
+h2 {
+  color: blue;
+}
 
-  h3 {
-    color: green;
-  }
+h3 {
+  color: green;
+}
 
-  p {
-    color: navy;
-  }
+p {
+  color: navy;
+  font-size: 16px;
+}
 
-  button {
-    background-color: lightblue;
-    border: solid thin black;
-  }
-`
+button {
+  background-color: lightblue;
+  border: solid thin black;
+  font-size:2em;
+}
+
+main {
+  padding: 1em;
+}`
 
 class StyleManager {
   constructor() {
