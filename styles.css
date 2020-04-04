@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+.body-main-style {
+  background-color: white;
+}
+.toolbar {
+  padding: 20px;
+  background-color: #272727;
+}
+.fas {
+  color: #14a76c;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.editor-content {
+  min-width: 25vh;
+}
+.editor {
+  margin: 10px;
+  min-height: 90vh;
+  min-width: 50vw;
+  max-width: 50vw;
+}
+.content {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: white;
+}
