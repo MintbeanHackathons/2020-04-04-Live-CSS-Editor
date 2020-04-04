@@ -10,13 +10,13 @@ function getTextValue() {
   })
   $('#cssEditorValue').append(() => {
     let cssCode = cssEditor.getValue();
-    return cssCode;
+    let cssValue = `${cssCode}`
+    return cssValue;
   })
   $('#htmlEditor').on('change', function() {
     $('#editorValue').empty();
     $('#editorValue').append(() => {
       let code = htmlEditor.getValue();
-      let cssCode = cssEditor.getValue();
       return code;
     })
   })
@@ -24,7 +24,8 @@ function getTextValue() {
     $('#cssEditorValue').empty();
     $('#cssEditorValue').append(() => {
       let cssCode = cssEditor.getValue();
-      return cssCode;
+      let cssValue = `<style type="text/css">${cssCode}</style>`
+      return cssValue;
     })
   })
   
