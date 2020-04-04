@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 // import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
+import SampleMarkup from "./SampleMarkup";
 
 import AceEditor from "react-ace";
 
+import "ace-builds/webpack-resolver";
 import "ace-builds/src-noconflict/mode-css";
 import "ace-builds/src-noconflict/theme-github";
 
@@ -24,7 +26,7 @@ function App() {
         // console.log("sheet", sheet);
     }
     return (
-        <div className="App">
+        <div className="app">
             <div className="editor">
                 <AceEditor
                     mode="css"
@@ -37,8 +39,7 @@ function App() {
                 />
             </div>
             <div className="sample-markup">
-                <h1>I am heading</h1>
-                <p>I am paragraph.</p>
+                <SampleMarkup></SampleMarkup>
             </div>
         </div>
     );
