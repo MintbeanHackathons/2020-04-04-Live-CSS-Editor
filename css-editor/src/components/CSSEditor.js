@@ -3,10 +3,10 @@ import React from 'react';
 function CSSEditor(props) {
   return (
     <form>
-      <p>CSS Editor</p>
+      <h4>CSS Editor</h4>
       <textarea
         rows="30"
-        cols="50"
+        cols="100"
         onChange={props.CSSChange}
         defaultValue={props.CSS}
       />
