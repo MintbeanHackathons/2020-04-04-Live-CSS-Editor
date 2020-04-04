@@ -1,0 +1,19 @@
+{
+  "name": "mintbean-css-editor",
+  "description": "Chrome extension that edits the CSS on your current page, made for Mintbean hackathon 2020-04-04",
+  "version": null,
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "mintbean-css-editor",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
