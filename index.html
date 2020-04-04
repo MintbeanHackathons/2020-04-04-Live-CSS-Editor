@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="CSS Editor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      textarea {
+        text-align: left;
+        font-family: monospace;
+        color: black;
+        background-color: #FCFC9A;
+      }
+    </style>
+    <!-- 
+      Some generic styling left in the textarea so it still remains readable with inevitable style changes
+    -->
+    <title>CSS Editor</title>
+  </head>
+  <body>
+    <header>
+      <h1>This text is in an H1 tag in the header!</h1>
+    </header>
+    <main>
+      <h2>This text is in an H2 tag</h2>
+      <p>
+        This is a paragraph. It's not a very long paragraph, but you can use it
+          to write CSS that targets paragraphs all the same. This page is very self-descriptive.
+          Try writing some CSS involving the tags, classes, and IDs below!
+      </p>
+      <form>
+        <label for="editor">Write CSS below:</label>
+        <br />
+        <textarea id="editor" name="editor">
+
+        </textarea>
+        
+      </form>
+      <h2 class="awesome-class">This H2 has a class named "awesome-class"</h2>
+      <p class="awesome-class">
+        This paragraph also has the "awesome-class" class attached to it!
+      </p>
+      <div class="div-spam">
+        <h3>This is an H3 in a div</h3>
+        <p>
+          This div, but not the H3 or the paragraph, has a class called "div-spam".
+        </p>
+      </div>
+      <div>
+        <h3>This is another H3 in another div</h3>
+        <p>
+          This div doesn't have a class, though
+        </p>
+      </div>
+      <h2>Below is a list of vegetables</h2>
+      <ul>
+        <li class="hoagie">Lettuce</li>
+        <li>Radish</li>
+        <li class="hoagie">Onion</li>
+        <li>Brussels Sprouts</li>
+        <li class="hoagie">Tomato</li>
+        <li>Potato</li>
+      </ul>
+      <p id="ingredients">
+        This paragraph has an ID called "ingredients", and the vegetables I like on my
+          sandwiches have the class "hoagie".
+      </p>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
