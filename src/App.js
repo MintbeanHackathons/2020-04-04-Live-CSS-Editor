@@ -41,6 +41,7 @@ function App() {
                     height="100%"
                     value={style}
                     theme="github"
+                    showPrintMargin={false}
                     onChange={onChange}
                     name="UNIQUE_ID_OF_DIV"
                     setOptions={{ showLineNumbers: true }}

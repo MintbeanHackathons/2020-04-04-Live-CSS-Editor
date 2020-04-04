@@ -17,7 +17,8 @@ h1.main-heading {
     .app {
         flex-direction: column;
     }
-    .editor {
+    .editor,
+    .editor .ace_editor {
         min-height: 500px;
     }
 }
@@ -28,6 +29,10 @@ h1.main-heading {
     flex-direction: column;
     /* justify-content: center; */
     flex: 1;
+}
+
+.editor {
+    border-right: 1px solid #d9d9d9;
 }
 
 .sample-markup {
