@@ -2,3 +2,4 @@
 *.map
 auxiliar/*
 .vscode/numbered-bookmarks.json
+.vscode/settings.json
