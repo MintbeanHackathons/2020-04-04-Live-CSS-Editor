@@ -51,7 +51,7 @@ class App {
   setupEditor() {
     const node = DOMCreate('div');
     node.id = 'editor';
-    node.style = 'margin:0;padding:0;'
+    node.style = 'margin:0;padding:0;'; // To force precedence
     DOMSelect('body').appendChild(node);
 
     ace.config.set('basePath', 'https://pagecdn.io/lib/ace/1.4.8')
