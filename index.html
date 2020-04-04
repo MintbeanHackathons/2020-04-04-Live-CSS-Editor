@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Live CSS Editor</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="#" id="logo">
+            <img src="https://kariselovuo.pro/ksprov1/wp-content/uploads/2018/02/css-logo-300x300.png" alt="Logo">
+        </a>
+        <nav>
+            <div id="nav-editor">
+                <h2 class="nav-icon">
+                    <ion-icon name="code-outline"></ion-icon>
+                </h2>
+                <h2>Editor</h2>
+            </div>
+            <div id="nav-preview">
+                <h2 class="nav-icon">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </h2>
+                <h2>Preview</h2>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="ide">
+        <div id="edit">
+            <div class="container">
+                <textarea name="edit-area" id="edit-area" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div id="preview">
+            <div class="container"></div>
+        </div>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="modules/lib/codemirror.js"></script>
+    <script src="modules/mode/javascript/javascript.js"></script>
+    <script src="modules/mode/css/css.js"></script>
+    <script src="modules/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="modules/mode/xml/xml.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
