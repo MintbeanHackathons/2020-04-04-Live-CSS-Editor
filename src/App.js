@@ -34,8 +34,11 @@ function App() {
     return (
         <div className="app">
             <div className="editor">
+                <h1 className="main-heading">CSS Editor:</h1>
                 <AceEditor
                     mode="css"
+                    width="100%"
+                    height="100%"
                     value={style}
                     theme="github"
                     onChange={onChange}
@@ -45,6 +48,7 @@ function App() {
                 />
             </div>
             <div className="sample-markup">
+                <h1 className="main-heading">Some sample HTML:</h1>
                 <SampleMarkup></SampleMarkup>
             </div>
         </div>

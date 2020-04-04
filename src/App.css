@@ -4,8 +4,22 @@ section {
     height: 100%;
 }
 
+h1.main-heading {
+    color: #000;
+}
+
 .app {
     display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .app {
+        flex-direction: column;
+    }
+    .editor {
+        min-height: 500px;
+    }
 }
 
 .editor,
@@ -15,6 +29,8 @@ section {
     /* justify-content: center; */
     flex: 1;
 }
+
 .sample-markup {
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
