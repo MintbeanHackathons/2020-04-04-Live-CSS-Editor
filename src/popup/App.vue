@@ -27,16 +27,27 @@ export default {
       content: '',
       langOpts: ['css', 'html'],
       lang: 'css',
+      bg: chrome.extension.getBackgroundPage(),
     };
   },
   methods: {
-    editorInit: function() {
+    editorInit() {
       require('brace/ext/language_tools'); //language extension prerequsite...
       require('brace/mode/html');
+      require('brace/mode/css');
       require('brace/mode/javascript'); //language
       require('brace/mode/less');
       require('brace/theme/chrome');
       require('brace/snippets/javascript'); //snippet
+    },
+  },
+  watch: {
+    content: function(val) {
+      this.bg.console.log(val);
+      let tab;
+      chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
+        chrome.tabs.insertCSS(tabs[0].id, { code: val });
+      });
     },
   },
 };
