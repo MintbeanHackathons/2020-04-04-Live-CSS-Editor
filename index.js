@@ -1,12 +1,30 @@
 
+function defineSession(name) {
+  var EditSession = require("ace/edit_session").EditSession;
+  var html = new EditSession(`<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+
+  <body>
+  </body>
+
+  </html>`, 1);
+  var css = new EditSession(["some", "css", "code here"]);
+  editor.setSession(name);
+}
+
+
 function editorSelect(e) {
   const selected = e.target;
   if (selected.className === 'html') {
     selected.classList.add('selected');
-    selected.nextElementSibling.classList.remove('selected')
+    selected.nextElementSibling.classList.remove('selected');
+    defineSession('html');
   } else if (selected.className === 'css') {
     selected.classList.add('selected');
-    selected.previousElementSibling.classList.remove('selected')
+    selected.previousElementSibling.classList.remove('selected');
+    defineSession('css');
   }
 }
 
@@ -23,14 +41,14 @@ function setupEditor() {
   editor.setTheme("ace/theme/monokai");
   editor.getSession().setMode("ace/mode/html");
   editor.setValue(`<!DOCTYPE html>
-<html>
-<head>
-</head>
+  <html>
+  <head>
+  </head>
 
-<body>
-</body>
+  <body>
+  </body>
 
-</html>`, 1);
+  </html>`, 1);
 
   editor.getSession().on('change', function () {
     update();
