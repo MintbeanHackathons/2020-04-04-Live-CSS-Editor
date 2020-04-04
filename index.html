@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haley's Insite CSS Editor</title>
+    <script src="scripts/jQuery-3.4.1.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/static.css">
-    <link rel="stylesheet" type="text/css" href="styles/dynamic.css">
+    <style type="text/css" media="screen" id="dynamic-styles">
+        /* inject styles here? */
+    </style>
 </head>
 <body>
+    <div id="editor">
+        /*enter custom styles here*/
+    </div>
+    
+    <script src="ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/pastel_on_dark");
+        editor.session.setMode("ace/mode/css");
+    </script>
     <h1>Level 1 Header</h1>
     <h2>Level 2 Header</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas tincidunt dolor vitae dignissim. Nulla volutpat
-        mi id ipsum vehicula, sit amet posuere nunc faucibus. Pellentesque non velit ut sem imperdiet ultrices vel a nisi. Nulla
-        sed placerat nisi, vitae placerat leo. Nunc sapien elit, mattis sed venenatis a, gravida.</p>
-    
-    <img src="images/portrait.jpg" alt="photo of the author" width="400px"/>
+        <p class="introduction">This sentence is a p tag with class "introduction"</p>
 
     <h3>Level 3 Header</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a ante at tellus condimentum luctus. Donec vulputate
