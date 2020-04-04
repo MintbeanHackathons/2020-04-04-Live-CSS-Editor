@@ -29,7 +29,6 @@ function App() {
     function onChange(newValue) {
         setStyle(newValue);
         sheet.innerHTML = newValue;
-        // console.log("sheet", sheet);
     }
     return (
         <div className="app">
@@ -43,9 +42,9 @@ function App() {
                     theme="github"
                     showPrintMargin={false}
                     onChange={onChange}
-                    name="UNIQUE_ID_OF_DIV"
+                    name="ace-editor"
                     setOptions={{ showLineNumbers: true }}
-                    editorProps={{ $blockScrolling: true }}
+                    editorProps={{ $blockScrolling: false }}
                 />
             </div>
             <div className="sample-markup">
