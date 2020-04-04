@@ -43,28 +43,32 @@ class StyleManager {
   }
 }
 
-const styleManager = new StyleManager();
+class App {
+  constructor() {
+    this.styleManager = new StyleManager();
+  }
 
-const setupEditor = () => {
-  const node = DOMCreate('div');
-  node.id = 'editor';
-  node.style = 'margin:0;padding:0;'
-  DOMSelect('body').appendChild(node);
+  setupEditor() {
+    const node = DOMCreate('div');
+    node.id = 'editor';
+    node.style = 'margin:0;padding:0;'
+    DOMSelect('body').appendChild(node);
 
-  ace.config.set('basePath', 'https://pagecdn.io/lib/ace/1.4.8')
-  const editor = ace.edit(node);
-  editor.setTheme("ace/theme/monokai");
-  editor.session.setMode("ace/mode/css");
-  editor.session.on('change', (delta) => {
-    const css = editor.getValue();
-    styleManager.apply(css);
-  });
+    ace.config.set('basePath', 'https://pagecdn.io/lib/ace/1.4.8')
+    const editor = ace.edit(node);
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/css");
+    editor.session.on('change', () => {
+      const css = editor.getValue();
+      this.styleManager.apply(css);
+    });
 
-  editor.session.setValue(DEFAULT_CSS);
+    editor.session.setValue(DEFAULT_CSS);
+  }
+
+  run() {
+    this.setupEditor()
+  }
 }
 
-const main = () => {
-  setupEditor()
-}
-
-main()
+(new App()).run()
