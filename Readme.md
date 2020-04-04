@@ -15,7 +15,7 @@ That's it!
 
 ## Demo as GIF
 
-[![Demo as GIF](https://j.gifs.com/wVvkO8.gif)](https://youtu.be/U28tz-T9Bsw)
+[![Demo as GIF](https://j.gifs.com/1WP95V.gif)](https://youtu.be/U28tz-T9Bsw)
 
 ## TODO
 
