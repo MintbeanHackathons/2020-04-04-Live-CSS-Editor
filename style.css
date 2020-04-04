@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+  }
+h1 {
+    margin:auto;
+    padding: 2rem; 
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:2rem;
+}
+#editor {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
+
+.box1 {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+}
+.box2 {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mintbean Hackathon!</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to the CSS Live Editor!</h1>
+    <div class="main">
+        <h3>Write your css in the editor below and click outside of the editor to see the changes.</h3>
+        <div class="content">
+            <div id="editor" contenteditable="true">write some css here!</div>
+            <div class="box1">class: box1</div>
+            <div class="box2">class: box2</div>
+        </div>
+    </div>  
+    <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
