@@ -4,38 +4,21 @@ import Input from './input'
 
 class App extends Component {
   state = {
-    color: '',
-    size: '',
-    backgroundColor: '',
+    style: ''
   }
-  changeColor = (color) => {
-    this.setState({color})
+
+  changeStyle = style => {
+    this.setState({style})
   }
-  changeSize = size => {
-    this.setState({size})
-  }
-  changeBackgroundColor = bg => {
-    this.setState({
-      backgroundColor: bg
-    })
-  }
-  
   render() {
-    const varStyle = {
-      container: {
-        color: this.state.color,
-        'font-size': this.state.size,
-        'background-color': this.state.backgroundColor
-      }
-    }
+    
     return (
-      <div className="App" style={varStyle.container}>
+      <div className="App">
         <h1>Live CSS Editor</h1>
         <Input 
-          changeColor={this.changeColor}
-          changeSize={this.changeSize}
-          changeBackgroundColor={this.changeBackgroundColor}
+          changeStyle={this.changeStyle}
         />
+        <style>{this.state.style}</style>
       </div>
     );
   }
