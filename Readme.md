@@ -13,12 +13,16 @@ https://2020-04-04-live-css-editor.now.sh/
 
 That's it!
 
+## Demo as GIF
+
+[![Demo as GIF](https://j.gifs.com/wVvkO8.gif)](https://youtu.be/U28tz-T9Bsw)
+
 ## TODO
 
-- Would be nice to get the Ace themese working; I suspect there's some sort of issue with webpack not being able to load it properly;
-- Get rid of the service worker error in the console (I was deleting all unnecessary files and this started showing as a result);
-- Bonus: write some Cypress end-to-end tests;
-- Build a little Chrome extension as per the hackathon "nice-to-have" instructions.
+-   Would be nice to get the Ace themese working; I suspect there's some sort of issue with webpack not being able to load it properly;
+-   Get rid of the service worker error in the console (I was deleting all unnecessary files and this started showing as a result);
+-   Bonus: write some Cypress end-to-end tests;
+-   Build a little Chrome extension as per the hackathon "nice-to-have" instructions.
 
 # Today's Objective: Live CSS Editor
 
