@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width :auto;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#editor {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+#iframe {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
