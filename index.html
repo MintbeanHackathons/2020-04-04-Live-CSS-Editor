@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .wrapper {
+        background: grey;
+    }
+
+    .container {
+        background: lightgrey; 
+            color: purple; 
+
+            width: 50%;
+            height: 50%;
+
+            position: absolute;
+            margin: auto;
+            top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    textarea {
+        height: 75%;
+        width: 75%;
+    }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+<h1>Hello Editor</h1>
+<p><i>add css below</i></p>
+<div class="container">
+
+    
+    <div contenteditable="">
+
+        <textarea rows = "20" cols = "30" onchange="" id="input"></textarea>
+        <style id="style"></style>
+
+    </div>
+</div>
+</div>
+<script>
+
+
+const input = document.querySelector('#input')
+const style = document.querySelector('#style')
+
+input.addEventListener('change', event => {
+  style.innerHTML = event.target.value;
+});
+
+</script>
+
+</body>
+</html>
