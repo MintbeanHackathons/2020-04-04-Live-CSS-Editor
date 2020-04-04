@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#cssEditor {
+  height: 40em;
+  width: 40em;
+  border: black 1px solid;
+}
+
+#htmlEditor {
+  height: 40em;
+  width: 40em;
+  border: black 1px solid;
+}
+
+#editorValue {
+  border: 1px solid black;
+  height: 40em;
+  width: 40em;
+}
