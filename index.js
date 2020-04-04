@@ -47,7 +47,7 @@ function setupEditor() {
 
   <body>
   <h1>This is the title</h1>
-  <p>You can play with the style down below</p>
+  <p class="bold">You can play with the style down below</p>
   <p>Lorem ipsum, or lipsum as it is sometimes known,
    is dummy text used in laying out print, graphic 
    or web designs. The passage is attributed to an 
@@ -60,6 +60,10 @@ function setupEditor() {
   h1 {
     color: red;
     text-align: center;
+  }
+
+  .bold {
+    font-weight: bold;
   }
 
   p {
