@@ -10,9 +10,15 @@ import "ace-builds/src-noconflict/mode-css";
 import "ace-builds/src-noconflict/theme-github";
 
 const code = `.sample-markup {
-  font-size: 2em;
+  font-size: 1em;
   color: purple;
-}`;
+}
+
+h1 {
+  color: green;
+}
+
+`;
 
 const sheet = document.createElement("style");
 sheet.innerHTML = code;
