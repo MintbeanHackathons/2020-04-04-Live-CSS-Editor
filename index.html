@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Live CSS Editor</title>
+  </head>
+  <body id="color">
+    <div class="header">
+      <h1>CSS Live Editor</h1>
+    </div>
+
+    <!-- <div class="main"> -->
+    <textarea contenteditable="true" id="editor" onkeyup="ref()"></textarea>
+    <iframe id="live-viewer"></iframe>
+    <!-- </div> -->
+
+    <div class="child">
+      <form id="form1">
+        <h2>Live Edit</h2>
+        <input type="checkbox" onclick="edited()" />
+        <b>Default</b>
+        <input type="checkbox" onclick="back()" />
+        <button
+          id="button1"
+          value="run"
+          class="button"
+          onclick="sent()"
+        ></button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
