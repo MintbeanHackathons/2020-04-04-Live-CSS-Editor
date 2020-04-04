@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class App extends React.Component {
+  //because I'm not using state, with more time I would probably restyle this to a functional component
   constructor(props) {
     super(props);
-    this.state = {
-      newCSS: ''
-    }
     this.onClick = this.onClick.bind(this);
   }
 
@@ -30,9 +28,9 @@ class App extends React.Component {
         <h1 align="center">Mintbean Hackathon</h1>
         <h2 align="center">April 4, 2020</h2>
         <h2 align="center">Live CSS Editor</h2>
-        <div>Insert Yo CSS In This Box</div>
-        <textarea id='css' rows='10' cols='100'></textarea><br />
-        <button id='updater' onClick={this.onClick}>Update Yo CSS</button>
+        <div>Insert New CSS In This Box</div>
+        <textarea id='css' rows='8' cols='50'></textarea><br />
+        <button id='updater' onClick={this.onClick}>Click to Update CSS</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et libero nibh. Maecenas posuere pulvinar ex in pellentesque. Vestibulum quis dolor nisl. Ut venenatis nunc et rutrum ultrices. Nunc lacinia mauris id nisl mollis viverra. Integer nec augue vulputate, sollicitudin dui fermentum, imperdiet dui. Ut bibendum, nibh sed pulvinar vestibulum, nisl nibh lacinia est, vitae dapibus libero metus at libero.</p>
         <p>Mauris vitae commodo nibh, et mattis massa. Ut sodales neque a euismod dignissim. Donec suscipit diam vitae risus tristique, quis consectetur dolor bibendum. Proin vel tincidunt mauris. Suspendisse turpis libero, fringilla nec rhoncus quis, dictum vel sem. Aenean nec viverra ligula. Proin nec pulvinar tellus, eu molestie lectus. Aenean id dapibus justo.</p>
         <p>Pellentesque neque purus, pharetra non lobortis eget, posuere ut metus. Integer mollis, neque ac facilisis sodales, libero leo luctus justo, sit amet malesuada enim ipsum in metus. Donec nec fringilla neque. Quisque quis vulputate nunc. Nunc ligula lorem, lobortis sit amet augue sed, viverra faucibus nisi. Praesent non sapien eu nisl dapibus aliquam eu eu libero. Quisque a finibus leo. Cras dapibus condimentum erat quis porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus sodales felis sit amet rhoncus. Sed risus ex, convallis ut gravida quis, varius in nibh.</p>
