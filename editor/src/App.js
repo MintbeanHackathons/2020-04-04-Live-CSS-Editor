@@ -1,15 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Editor from "./editor";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>My CSS Editor</h1>
+      <header className="head">
+        <h1 className="heading">My CSS Editor</h1>
       </header>
-      <Editor />
+      <main>
+        <Editor />
+      </main>
+      <p className="instructions">
+        Type some CSS into the editor above and watch the page change.
+      </p>
     </div>
   );
 }
