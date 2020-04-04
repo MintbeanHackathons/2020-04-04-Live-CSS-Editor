@@ -10,5 +10,5 @@ var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
 document.getElementById("editor").addEventListener("change", updateCss);
 
 function updateCss(){
-	document.getElementById("myCss").innerHTML = editor.getValue(); 
+	document.getElementById("myCss").innerHTML = editor.value; 
 }
