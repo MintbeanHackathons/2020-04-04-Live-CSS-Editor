@@ -1,0 +1,54 @@
+
+html,body { margin:0; padding:0; height:100%; width:100%; overflow: hidden;}
+
+#editor {
+    height: 100%;
+    width:50%;
+    display:inline-block;
+}
+
+#container {
+	height:100%;
+	width:auto;
+  white-space : nowrap; 
+  overflow : hidden;
+  position:relative;
+}
+
+#iframe {
+	height:100%;
+	display:inline-block;
+	width:50%;
+}
+
+header {
+  background: #272822;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.tabs {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.html,
+.css {
+  width: 45%;
+  height: 30px;
+}
+
+.selected {
+  background: gray;
+}
+
+header h1 {
+  width: 40%;
+}
