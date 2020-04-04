@@ -32,16 +32,18 @@ export default {
   },
   computed: {
     dark() {
+      // Check if they prefer dark mode
       return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     },
   },
   methods: {
     editorInit() {
+      // Not all of these are currently needed but I figured I might get to them eventually
       require('brace/ext/language_tools'); //language extension prerequsite...
       require('brace/mode/html');
       require('brace/mode/css');
       require('brace/mode/javascript'); //language
-      require('brace/mode/less');
+      require('brace/mode/scss');
       require('brace/theme/chrome');
       require('brace/theme/twilight');
       require('brace/snippets/javascript'); //snippet
@@ -49,8 +51,9 @@ export default {
   },
   watch: {
     content: function(val) {
-      let tab;
+      // Get an array of the only tab that is open and active
       chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
+        // Add content as CSS to that tab
         chrome.tabs.insertCSS(tabs[0].id, { code: val });
       });
     },
