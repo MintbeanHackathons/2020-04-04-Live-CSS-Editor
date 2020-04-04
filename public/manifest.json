@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "short_name" : "KytraCSS",
+  "name": "KytraLiveCSS",
+  "version": "1.14",
+  "icons": {
+    "16": "kobayashi_16.png",
+    "48": "kobayashi_48.png",
+    "128": "kobayashi.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": ["activeTab","tabs"],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "KytraCSS"
+  }
+}
