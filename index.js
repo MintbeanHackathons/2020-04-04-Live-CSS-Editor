@@ -32,36 +32,3 @@ function getTextValue() {
 
 
 $(getTextValue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function themeChooser() {
-//   let theme = editor.setTheme("ace/theme/github");
-//   $('.lightMode').on('click', () => {
-//     theme = editor.setTheme("ace/theme/github");
-//   })
-//   $('darkMode').on('click', () => {
-//     theme = editor.setTheme("ace/theme/twilight");
-//   })
-//   return theme;
-// }
-
-
-
-// $(themeChooser)
