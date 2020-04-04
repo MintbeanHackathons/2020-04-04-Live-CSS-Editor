@@ -1,5 +1,7 @@
 # Today's Objective: Live CSS Editor
 
+<img src="img/screencapture.png" width="100%">
+
 ## Prize
 
 $25 CAD Amazon gift card + bragging rights.
@@ -32,7 +34,7 @@ First, you need an input field where you'll write code. This is either a plain t
 
 Second, you need some kind of onChange listener that listens for changes to the input field.
 
-Third, you need a `style` tag that contains and gets updated with CSS. All you should have to do is output your CSS into the `style` tag's innerHTML, and the browser should pick it up immediately. 
+Third, you need a `style` tag that contains and gets updated with CSS. All you should have to do is output your CSS into the `style` tag's innerHTML, and the browser should pick it up immediately.
 
 Tada! CSS Editor!
 
