@@ -1,6 +1,6 @@
 # Today's Objective: Live CSS Editor
 
-<img src="img/screencapture.png" width="100%">
+[<img src="img/screencapture.png" width="100%">](https://monstruo.me/mintbean_hackathon_20200404/)
 
 ## Prize
 
