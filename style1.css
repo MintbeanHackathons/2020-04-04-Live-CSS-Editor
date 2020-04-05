@@ -1,0 +1,42 @@
+body {
+   color: darkgoldenrod;
+   background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pinkDiv {
+  background-color: pink;
+  color: slategray;
+  margin: 10px;
+  height: 100px;
+  width: 200px;
+
+}
+
+.shortPara {
+  color: white;
+  margin: 10px;
+}
+
+.longPara {
+  color: green;
+  margin: 10px;
+}
+
+#main {
+  padding: 2px;
+  width: 50%;
+}
+
+#editorSection {
+  width: 49%
+}
+
+#editor {
+  width: 100%;
+  min-height: 200px;
+}

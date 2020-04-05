@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Daryl's CSS live editor</title>
+    <link rel='stylesheet' type='text/css' href='style1.css' />
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class='container'>
+      <div id='mainBody'>
+        <h1>H1 Header text</h1>
+
+        <div class='pinkDiv'>class = pinkDiv</div>
+
+        <p class='shortPara'>This paragraph is very short. It only has 2 sentences.</p>
+
+        <p class='longPara'>This paragraph is longer. It has a whole 3 sentences. I know, I must have been writing all day!</p>
+
+        <button type='button' id='clickMe'>Click Me</button>
+      </div>
+      <div id='editorSection'>
+        <p id='editorTitle'>Enter your CSS code here: </p>
+      <div id="editor">
+        *{color:blue;}
+      </div>
+      </div>
+    </div>
+    <script src="https://pagecdn.io/lib/ace/1.4.8/ace.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var styleText = document.querySelector("style");
+    var editor = ace.edit("editor");
+    editor.session.on('change', (delta) => {
+      styleText.innerHTML = editor.getValue();
+    })
+    ace.config.setModuleUrl("ace/theme/monokai", "https://pagecdn.io/lib/ace/1.4.8/theme-monokai.js");
+    editor.setTheme("ace/theme/monokai");
+    ace.config.setModuleUrl("ace/mode/css", "https://pagecdn.io/lib/ace/1.4.8/worker-css.js");
+    editor.session.setMode("ace/mode/css")
+</script>
+  </body>
+</html>
