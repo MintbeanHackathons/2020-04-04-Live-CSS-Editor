@@ -8,28 +8,20 @@ import "ace-builds/src-noconflict/theme-github";
 
 function App() {
 
-  
-  // I wanted tu use this hook to setup the style tag
-  useEffect(() => {
-    const style = document.createElement('style').setAttribute('id', 'styleIt');
-    
-    return (() => {
-      document.getElementById('App').insertAdjacentElement('afterend', style);
-    });
-  }, [])
-
-  // then using the on change event listener from ace editor I wanted to change the state to the new style and then insert it as the inner html of the style tag
   const [newStyle, setNewStyle] = useState('');
 
   const onChange = (newValue) => {
     setNewStyle(newValue);
-    document.getElementsByTagName('style').innerHTML(newStyle);
+
+    document.getElementById('style-it').innerHTML = newStyle;
   }
 
   //sadly it doesn't work and I can't figure out why :(
 
   return (
-    <div className="App" id='App'>
+    <div className="App">
+      <style id='style-it'/>
+      <p>{newStyle}</p>
       <AceEditor
         mode='css'
         theme='github'
