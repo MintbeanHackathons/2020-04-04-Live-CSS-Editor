@@ -1,11 +1,14 @@
-.main {
+main {
   display: flex;
+  font-family: sans-serif;
 }
 .search {
   margin: 15px;
   line-height: 30px;
+  font-size: 25px;
 }
 .editor {
+  font-size: 27px;
   box-shadow: 1px 3px 5px grey;
   line-height: 30px;
   width: 40vw;
