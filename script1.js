@@ -4,6 +4,8 @@ cssInput.addEventListener('input', (e) => {
 })
 function styleParser(text) {
   //break up into sections based on ending curlybrackets
+  var allElements = Array.from(document.querySelectorAll('*g'));
+  allElements.forEach (a => {a.removeAttribute('style')})
   var splitText = text.split('}')
   for (let i = 0; i < splitText.length; i++) {
     var section = splitText[i].split('{');
@@ -11,7 +13,7 @@ function styleParser(text) {
     if (!section[1]){
       return;
     }
-    var selection = document.querySelectorAll(section[0].trim())
+    var selection = document.querySelectorAll(section[0])
     var selectionArray = Array.from(selection);
     selectionArray.forEach( a => {
       console.log('selection',a)
