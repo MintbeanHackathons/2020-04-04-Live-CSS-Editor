@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AceEditor from 'react-ace';
@@ -8,7 +8,7 @@ import "ace-builds/src-noconflict/theme-github";
 
 function App() {
 
-  const [newStyle, setNewStyle] = useState('');
+  const [newStyle, setNewStyle] = useState();
 
   const onChange = (newValue) => {
     setNewStyle(newValue);
