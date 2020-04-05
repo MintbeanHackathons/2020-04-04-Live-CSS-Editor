@@ -4,14 +4,13 @@
 
 Chrome extension made with Vue and AceEditor, spent the majority of the time (3hrs) learning about Chrome extensions and AceEditor, didn't have time to do anything cool, other than detect dark mode preference, edit styling and editor theme accordingly, and ofcourse - actually edit CSS. Oh and I added a drop down for more editor modes that I didn't get time to use. 
 
+## Gif:
+![Demo](https://github.com/bryce-mcmath/2020-04-04-Live-CSS-Editor/blob/master/mintbean__demo.gif?raw=true) 
+
 ## Pics:
 ![Not in use](https://github.com/bryce-mcmath/2020-04-04-Live-CSS-Editor/blob/master/unused.png?raw=true)
 
 ![In use](https://github.com/bryce-mcmath/2020-04-04-Live-CSS-Editor/blob/master/used.png?raw=true)
-
-## Gif:
-### (My screencapture tool, Xbox Game Bar hides Chrome extension popups 😢)
-![Demo](https://github.com/bryce-mcmath/2020-04-04-Live-CSS-Editor/blob/master/mintbean__demo.gif?raw=true) 
 
 ## Prize
 
