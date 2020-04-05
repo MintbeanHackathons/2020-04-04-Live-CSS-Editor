@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/RachNovo/2020-04-04-Live-CSS-Editor/issues"
   },
-  "homepage": "https://github.com/RachNovo/2020-04-04-Live-CSS-Editor#readme"
+  "homepage": "https://github.com/RachNovo/2020-04-04-Live-CSS-Editor#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
