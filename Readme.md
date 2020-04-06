@@ -5,19 +5,20 @@
 ### CSSEDit by ZachyNative
 
 <img src="cssedit.gif">
+Live edit of my linkedIn page.
 
 ### Lesson's Learned
 
 TIME MANAGEMENT
-During the hackathon, i was able to learn to manage my expectations for a 2hr MVP. creating a bunch of features within 2 hrs can be challenging, and its important to know whats possible within the time frame.
+During the hackathon, i was able to learn to manage my expectations for a 2hr MVP. Creating a bunch of features within 2 hrs can be challenging, and its important to know whats possible within the time frame.
 
 RESEARCH
-I got to practice how to streamline my research to a reasonable amount of time, realizing what is fluff and what isnt is a very important part of the process.
+I got to practice how to streamline my research to a reasonable amount of time. Realizing what is fluff and what isnt is a very important part of the process.
 
 CODE REVIEWS
 Its like travelling to a foreign country. You get to see how things are done else where, and you are better for it.
 
-NOTE: due to security concerns, i will not be deploying this chrome extension. All code reviews are welcome!
+NOTE: Due to security concerns, i will not be deploying this chrome extension. All code reviews are welcome!
 
 ## Prize
 
