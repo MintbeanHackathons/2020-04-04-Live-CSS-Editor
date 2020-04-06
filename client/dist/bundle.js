@@ -183,7 +183,7 @@ eval("/* WEBPACK VAR INJECTION */(function(module) {ace.define(\"ace/theme/githu
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"\\r\\n\\r\\n._2a1c9hxYW4skiMn-v6Vtix h1{\\r\\n    font-family: 'Pacifico',\\r\\n    cursive;\\r\\n    line-height: 10px;\\r\\n    font-size: large;\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"container\": \"_2a1c9hxYW4skiMn-v6Vtix\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./client/src/Editor/App.module.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"html, body {\\r\\n    background-color: burlywood;\\r\\n}\\r\\n\\r\\n._2a1c9hxYW4skiMn-v6Vtix h1{\\r\\n    font-family: 'Pacifico',\\r\\n    cursive;\\r\\n    line-height: 10px;\\r\\n    font-size: large;\\r\\n}\\r\\n\\r\\n.Gqz_GJy32vHo9HbjU7Na_ {\\r\\n    border-color: aqua;\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"container\": \"_2a1c9hxYW4skiMn-v6Vtix\",\n\t\"editor\": \"Gqz_GJy32vHo9HbjU7Na_\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./client/src/Editor/App.module.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 

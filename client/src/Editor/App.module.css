@@ -1,8 +1,14 @@
-
+html, body {
+    background-color: burlywood;
+}
 
 .container h1{
     font-family: 'Pacifico',
     cursive;
     line-height: 10px;
     font-size: large;
+}
+
+.editor {
+    border-color: aqua;
 }
