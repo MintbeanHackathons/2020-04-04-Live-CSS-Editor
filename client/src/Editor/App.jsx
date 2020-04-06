@@ -1,8 +1,10 @@
 import React from 'react';
-import AceEditor from "react-ace";
+import AceEditor from 'react-ace';
+import styles from './App.module.css';
 
 import "ace-builds/src-noconflict/mode-css";
-import "ace-builds/src-noconflict/theme-monokai";
+import "ace-builds/src-noconflict/snippets/css"
+import "ace-builds/src-noconflict/theme-github";
 
 class Editor extends React.Component {
     constructor(props) {
@@ -13,74 +15,43 @@ class Editor extends React.Component {
 
         this.onChange = this.onChange.bind(this);
         this.onLoad = this.onLoad.bind(this);
-        this.handleEnter = this.handleEnter.bind(this);
-        this.handleKeyPress = this.handleKeyPress.bind(this);
-    }
-
-    componentDidMount() {
-        document.addEventListener('keydown', this.handleKeyPress);
-        var sheet = document.createElement('style')
-        style.addAttribute("id", "editStyle")
-        document.head.appendChild(sheet);
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('keydown', this.handleKeyPress);
-        function removeElement(elementId) {
-            // Removes an element from the document.
-            var element = document.getElementById(elementId);
-            element.parentNode.removeChild(element);
-        }
-        removeElement("editStyle");
-    }
-
-    handleEnter() {
-        
-    }
-    handleKeyPress(event) {
-        if (event.key === "Enter") {
-            this.handleEnter();
-        }
     }
 
     onChange(newValue) {
         this.setState({
             value: newValue
         })
+        this.onLoad()
     }
 
-    onLoad(editor) {
-        console.log('hello', editor)
+    onLoad() {
+        console.log('hello');
+        chrome.tabs.insertCSS(null, { code: this.state.value })
     }
 
     render() {
         const { value } = this.state;
         return (
-            <div>
-                <h1>Sample Text</h1>
+            <div className={styles.container}>
+                <h1>CSSED.it by ZachyNative</h1>
                 <AceEditor
-                    placeholder="Placeholder Text"
+                    placeholder="....use CSS to change the style of this page"
                     mode="css"
-                    theme="monokai"
+                    theme="github"
                     name="CSSEditor"
-                    height='250px'
-                    width='500px'
-                    onLoad={this.onLoad}
+                    height="20em"
+                    width="20em"
                     onChange={this.onChange}
-                    fontSize={10}
+                    fontSize={14}
                     showPrintMargin={true}
-                    showGutter={true}
+                    showGutter={false}
                     highlightActiveLine={true}
                     value={value}
-                    defaultValue={
-                        `* {
-    {/* enter your css below this line */}
-                    };`
-                    }
+                    wrapEnabled={true}
                     setOptions={{
                         enableBasicAutocompletion: true,
                         enableLiveAutocompletion: true,
-                        enableSnippets: false,
+                        enableSnippets: true,
                         showLineNumbers: true,
                         tabSize: 2,
                     }} />
