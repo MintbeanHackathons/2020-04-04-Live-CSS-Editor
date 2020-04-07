@@ -4,4 +4,4 @@ This project was a challenge for a MintBean Hackathon- simple, but lots of fun i
 
 I had some difficulty figuring out how to use the Ace editor, but got it working in the end.
 
-![editor interface](css-live-editor.mp4)
+![editor interface](test.gif)
