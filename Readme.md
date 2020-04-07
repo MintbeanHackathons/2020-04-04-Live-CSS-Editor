@@ -1,3 +1,5 @@
-# https://codepen.io/hmr/pen/MWwMaxO
+# In-Site CSS Editor
 
-## As of 3:02 pm, I haven't figured out how to link in Ace editor, but you can at least see the rest of the code!
+This project was a challenge for a MintBean Hackathon- simple, but lots of fun in just a few hours!
+
+I had some difficulty figuring out how to use the Ace editor, but got it working in the end.
