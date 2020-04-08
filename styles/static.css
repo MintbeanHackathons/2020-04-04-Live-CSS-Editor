@@ -1,0 +1,14 @@
+/* keep editor in the bottom section of viewport */
+#editor {
+    height: 25vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+
+/* keep all body content viewable */
+body {
+    margin-bottom: 25vh;
+}
