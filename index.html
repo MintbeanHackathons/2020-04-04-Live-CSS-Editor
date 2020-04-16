@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Editor</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div>
+      <div class="search">
+        Use this page to make style changes to my portfolio! <br>
+      </div>
+      <div class="editor">
+        What would you like to change? <br><br>
+        Style Name: Value <br>
+        <form>
+          <input type="text" form="editor" id="style" name="editor">
+          <input type="text" form="editor" id="value" name="editor">
+          <input onClick="changeStyle()" form="changeStyle" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="page">
+        <iframe src="https://rachnovo.github.io/" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" id="frame" class="frame">
+        </iframe>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
