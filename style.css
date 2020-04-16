@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color:blue;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+p {
+    color: gray;
+}
+
+.editor-container {
+    position: relative;
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+}
