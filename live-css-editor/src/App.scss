@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#title {
+    text-align: center;
+}
+
+.editor-page {
+    margin: 1rem;
+    height: 100vh;
+    
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    &__edit-container {
+        border: 1px solid black;
+        width: 45%;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 6px 6px #f0f0f0;
+
+        &--textarea {
+            height: 50vh;
+            width: 80%;
+            padding: 1rem;
+            font-size: 1rem;
+            resize: none;
+
+        }
+    }
+
+    &__example-container {
+        border: 1px solid black;
+        width: 45%;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 6px 6px #f0f0f0;
+    }
+
+}
