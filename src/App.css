@@ -1,0 +1,41 @@
+html,
+body,
+section {
+    height: 100%;
+}
+
+h1.main-heading {
+    color: #000;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .app {
+        flex-direction: column;
+    }
+    .editor,
+    .editor .ace_editor {
+        min-height: 500px;
+    }
+}
+
+.editor,
+.sample-markup {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    flex: 1;
+}
+
+.editor {
+    border-right: 1px solid #d9d9d9;
+}
+
+.sample-markup {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
